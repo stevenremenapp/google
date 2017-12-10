@@ -1,0 +1,15 @@
+1) the search box border! there's no border but the box-shadow. uncheck box-shadow in the console and the search disappears! also, rgba.
+      can't simply make the border less opaque because it affects all the text typed within it
+2) opacity of text
+3) footer not stretching all the way across on smaller sized windows
+4) cursor doesn't turn into a hand on buttons
+5) header and footer absolutely positioned, not fixed
+6) media queries:
+      the header disappears at a certain width;
+      the search bar is one size within a certain width and one size at larger widths
+      the microphone has to be adjusted when the search box shrinks in width
+7) the microphone in the search box!
+      span background-image for the actual image
+      nested in an a link so it's usable
+      absolutely positioned within a relative wrapper
+      text-align center on the parent element (.main-content) to center it

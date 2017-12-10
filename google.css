@@ -1,0 +1,241 @@
+body {
+  width: 100%;
+  margin: auto;
+  font-family: arial, sans-serif;
+  font-size: 13px;
+}
+
+ /*--------------  HEADER  -------------------*/
+
+header {
+  position: absolute;
+  min-width: 980px;
+  width: 100%;
+  left: 0;
+  top: 0;
+  height: 60px;
+  line-height: 60px;
+}
+
+.left-nav-header {
+  float: left;
+  padding-left: 30px;
+}
+
+.left-nav-header a {
+  margin-right: 15px;
+}
+
+.right-nav-header {
+  float: right;
+  padding-right: 30px;
+}
+
+.right-nav-header a {
+  margin-left: 15px;
+}
+
+#menu-block {
+  width: 24px;
+  height: auto;
+  vertical-align: middle;
+}
+
+.sign-in-btn {
+  background: -webkit-linear-gradient(top, #4387fd, #4683ea);
+  font-weight: bold;
+  color: #fff;
+  cursor: default;
+  text-decoration: none;
+  border: 1px solid #4285f4;
+  border-radius: 2px;
+  display: inline-block;
+  line-height: 28px;
+  padding: 0 12px;
+}
+
+.sign-in-btn:hover {
+  box-shadow: 0 1px 0 rgba(0, 0, 0, .15);
+}
+
+ /*--------------  LOGO AREA  -------------------*/
+
+section {
+  clear: both;
+  margin-top: 200px;
+  min-width: 980px;
+  width: 100%;
+}
+
+.logo img {
+  width: 272px;
+  height: 92px;
+  height: auto;
+  display: block;
+  margin: auto;
+}
+
+ /*--------------  SEARCH AREA  -------------------*/
+
+ .main-content {
+   text-align: center; /* inline-block level elements DO NOT center; you have to use text-align center on the parent element */
+ }
+
+ .search-form {
+   margin-top: 25px;
+   position: relative;
+   display: inline-block; /*including this allows the microphone to appear in the form as it should*/
+ }
+
+ .voicesearch-link {
+   position: absolute;
+   display: inline-block; /* including this allowed the buttons to center on their own*/
+   width: 18px;
+   height: 25px;
+   top: 0px;
+   right: 10px; /*aligning to the right side allows the microphone to react responsively when the box shrinks */
+   padding: 8px;
+ }
+
+ .microphone {
+   width: 18px;
+   background: url(voicesearch.png) no-repeat -3px 0;
+   background-size: 24px 28px;
+   display: inline-block;
+   height: 25px;
+   vertical-align: middle;
+ }
+
+ .search-buttons {
+   display: block;
+   text-align: center;
+ }
+
+input[type=button] {
+  height: 36px;
+  line-height: 27px;
+  background-image: linear-gradient(top, #f5f5f5, #f1f1f1);
+  background-color: #f2f2f2;
+  border: 1px solid #f2f2f2;
+  border-radius: 2px;
+  font-size: 13px;
+  font-weight: bold;
+  color: #757575;
+  margin: 29px 2px;
+  padding: 0 16px;
+  text-align: center;
+  cursor: default;
+}
+
+input[type=button]:hover {
+  background-image: linear-gradient(top, #f8f8f8, #f1f1f1);
+  background-color: #f8f8f8;
+  border: 1px solid #c6c6c6;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  color: #222;
+}
+
+input[type=button]:focus {
+  border: 1px solid #4d90fe;
+  outline: none;
+}
+
+input[type=text] {
+  display: block;
+  margin: auto;
+  box-sizing: border-box;
+  box-shadow: 0 2px 2px 0 rgba(222, 222, 222, .9), 0 0 0 1px rgba(199, 199, 199, .95);
+  /*transition: box-shadow 200ms cubic-bezier(0.4, 0.0, 0.2, 1);*/
+  border: none;
+  border-radius: 2px;
+  height: 44px;
+  width: 484px;
+  line-height: 34px;
+  font-size: 16px;
+  padding: 0 9px 0 16px;
+  color: #222;
+  /*opacity: 0.25;*/
+  vertical-align: top;
+}
+
+input[type=text]:hover,
+input[type=text]:focus {
+  box-shadow: 0 3px 8px 0 rgba(212, 212, 212, .8), 0 0 0 1px rgba(199, 199, 199, .95);
+  outline: none;
+}
+
+ /*--------------  FOOTER  -------------------*/
+
+footer {
+  position: absolute;
+  min-width: 980px;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  height: 40px;
+  line-height: 40px;
+  background-color: #f2f2f2;
+  border-top: 1px solid #e4e4e4;
+}
+
+.left-nav-footer {
+  float: left;
+  padding-left: 30px;
+}
+
+.left-nav-footer a {
+  margin-right: 20px;
+}
+
+.right-nav-footer {
+  float: right;
+  padding-right: 30px;
+}
+
+.right-nav-footer a {
+  margin-left: 20px;
+}
+
+ /*--------------  LINKS  -------------------*/
+
+ .slightly-transparent:link,
+ .slightly-transparent:visited {
+   text-decoration: none;
+   color: #000;
+   opacity: 0.75;
+ }
+
+ .underline:hover {
+   text-decoration: underline;
+ }
+
+ .right-nav-non-btn:link,
+ .right-nav-non-btn:visited {
+   text-decoration: none;
+   color: #000;
+ }
+
+ .right-nav-non-btn:hover {
+   opacity: 0.75;
+   text-decoration: underline;
+ }
+
+ .dark-hover:hover {
+   opacity: 1;
+ }
+
+
+
+  /*--------------  MEDIA QUERIES  -------------------*/
+
+  @media (min-width: 1250px) {
+    input[type=text] {
+      width: 582px;
+    }
+  }
+
+  @media (max-width: 580px) {
+    header {
+      display: none;
+    }
+  }
